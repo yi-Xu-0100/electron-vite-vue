@@ -77,5 +77,5 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Lint markdown
+      - name: Lint markdown files
         run: npx markdownlint-cli ${{ needs.job1.outputs.markdown_files }} --ignore node_modules
